@@ -8,7 +8,7 @@ fn maybe_ice_cream(hour_of_day: u16) -> Option<u16> {
         Some(5)
     } else if hour_of_day <= 23 {
         Some(0)
-    } else{
+    } else {
         None
     }
 }

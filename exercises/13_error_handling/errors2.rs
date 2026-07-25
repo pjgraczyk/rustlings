@@ -25,9 +25,8 @@ fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
 
     match qty {
         Ok(val) => Ok(val * cost_per_item + processing_fee),
-        Err(err) => Err(err)
+        Err(err) => Err(err),
     }
-
 }
 
 fn main() {

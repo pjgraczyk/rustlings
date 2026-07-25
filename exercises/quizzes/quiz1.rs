@@ -11,11 +11,7 @@
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 fn calculate_price_of_apples(quantity: usize) -> usize {
-    let apple_price = if quantity > 40 {
-        1
-    } else {
-        2
-    };
+    let apple_price = if quantity > 40 { 1 } else { 2 };
     apple_price * quantity
 }
 
