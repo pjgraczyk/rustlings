@@ -13,9 +13,10 @@ enum DivisionError {
 fn divide(a: i64, b: i64) -> Result<i64, DivisionError> {
     if b == 0 {
         Err(DivisionError::DivideByZero)
-    } else if todo!() {
+    } else if a == i64::MIN && b == -1 {
+        Err(DivisionError::IntegerOverflow)
     } else if a % b == 0 {
-        Ok((a / b) as i64)
+        Ok(a / b)
     } else {
         Err(DivisionError::NotDivisible)
     }
