@@ -19,7 +19,7 @@ impl PositiveNonzeroInteger {
             Ordering::Greater => Ok(Self(value as u64)),
         }
     }
-}x
+}
 
 fn main() {
     // You can optionally experiment here.
